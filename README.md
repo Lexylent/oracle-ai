@@ -298,19 +298,30 @@ npm run test
 
 ## 📄 Lizenz
 
-[Lizenz hier einfügen]
+MIT License - siehe [LICENSE](LICENSE) für Details.
 
 ## 👥 Autoren
 
-[Autoren hier einfügen]
+**Alexander Ibach** ([@Lexylent](https://github.com/Lexylent))
+- Konzept & Entwicklung
+- System-Architektur
+- KI-Agenten-Engine
+
+Entwickelt mit Unterstützung von Claude Code (Anthropic).
 
 ## 🐛 Bug Reports & Feature Requests
 
-Bitte öffne ein Issue auf GitHub für:
-- Bug Reports
-- Feature Requests
-- Verbesserungsvorschläge
+Bitte öffne ein [Issue auf GitHub](https://github.com/Lexylent/oracle-ai/issues) für:
+- 🐛 Bug Reports
+- ✨ Feature Requests
+- 💡 Verbesserungsvorschläge
+- 📖 Dokumentations-Feedback
 
 ## 📞 Support
 
-[Support-Kontakt hier einfügen]
+- **GitHub Issues:** [oracle-ai/issues](https://github.com/Lexylent/oracle-ai/issues)
+- **Discussions:** [oracle-ai/discussions](https://github.com/Lexylent/oracle-ai/discussions)
+
+---
+
+**Entwickelt 2026** | Powered by React, Hono, tRPC & Drizzle ORM
