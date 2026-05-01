@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 6%;
+    --foreground: 0 0% 98%;
+    --card: 220 18% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 18% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 220 70% 55%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 15% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 15% 16%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 220 15% 16%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 220 70% 55%;
+    --radius: 0.625rem;
+    --sidebar-background: 220 18% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 220 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 220 70% 55%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out forwards;
+  }
+  .animate-pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+  .animate-typing::after {
+    content: "";
+    animation: typing 1.2s steps(4, end) infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes typing {
+  0%, 100% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+}
